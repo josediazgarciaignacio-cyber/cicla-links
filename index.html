@@ -214,16 +214,28 @@
 
     <span class="badge"><span class="dot"></span> Marca Chile</span>
 
-    <nav class="links">
-      <a class="btn btn-primario" id="link-sitio" href="#" rel="noopener">
+        <nav class="links">
+      <a class="btn btn-primario" href="https://cicla.cl/pages/cotizar" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+        Cotiza aquí
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+
+      <a class="btn btn-secundario" href="https://drive.google.com/file/d/1kpRztEJzr1FO1ORNghKp3nfNNQE9HsXd/view" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        Ver catálogo
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+
+      <a class="btn btn-secundario" href="https://cicla.cl" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
         Visitar sitio web
         <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
 
-      <a class="btn btn-secundario" id="link-catalogo" href="#" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-        Ver catálogo
+      <a class="btn btn-secundario btn-linkedin" href="https://www.linkedin.com/company/ptec-looped/posts/?feedView=all" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="#0A66C2" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        Síguenos en LinkedIn
         <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
     </nav>
@@ -236,22 +248,5 @@
     <p class="foot">Hecho en <strong>Chile</strong> 🇨🇱</p>
   </main>
 
-  <script>
-    /* =======================================================
-       EDITA SOLO ESTAS DOS LÍNEAS con las URLs reales de CICLA
-       ======================================================= */
-    const URL_SITIO    = "https://cicla.cl";          // ← sitio web
-    const URL_CATALOGO = "https://drive.google.com/file/d/1kpRztEJzr1FO1ORNghKp3nfNNQE9HsXd/view";  // ← catálogo
-    /* ======================================================= */
-
-    (function () {
-      const sitio = document.getElementById("link-sitio");
-      const cat   = document.getElementById("link-catalogo");
-      const ok = (u) => typeof u === "string" && /^https?:\/\/\S+\.\S+/.test(u);
-
-      if (ok(URL_SITIO)) { sitio.href = URL_SITIO; } else { sitio.style.display = "none"; }
-      if (ok(URL_CATALOGO)) { cat.href = URL_CATALOGO; } else { cat.style.display = "none"; }
-    })();
-  </script>
 </body>
 </html>
